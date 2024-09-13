@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            align-items: center;
+        }
+    
+        header {
+            width: 100%;
+            max-width: 2000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c71717;
+            color: #ffffff;
+        }
+    
+        .header-main img {
+            width: 100%;
+            height: auto;
+            max-width: 2000px;
+        }
+    
+        .header-small {
+            padding: 0.5em;
+            background-color: #c71717;
+            text-align: center;
+            font-size: 1em;
+            font-weight: normal;
+            width: 100%;
+        }
+    
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+    
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+    
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        div.container {
+            width: 100%;
+            max-width: 2000px;
+            display: flex;
+            flex: 1;
+            background-color: #ffffff;
+        }
+    
+        nav {
+            flex: 0 0 200px;
+            padding: 1em;
+            background-color: #ffe7e7;
+            border-right: 1px solid #c71717;
+            height: calc(100vh - auto); /* Adjusted for header and footer height */
+            overflow-y: auto;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        nav ul li {
+            margin: 1em 0;
+        }
+    
+        nav ul a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            display: block;
+            padding: 0.5em;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        nav ul li a:hover {
+            background-color: #ffffff;
+            color: #c71717;
+            transform: translateX(5px);
+        }
+    
+        article {
+            flex: 1;
+            padding: 2em;
+            background-color: #ffffff;
+            overflow-y: auto;
+        }
+    
+        footer {
+            width: 100%;
+            max-width: 2000px;
+            padding: 1em;
+            color: #ffffff;
+            background-color: #c71717;
+            text-align: center;
+            font-size: 1em;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #c71717;
+            text-align: center;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        input[type="text"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+            border-color: #c71717;
+            outline: none;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 0.7em 2em;
+            margin: 1em 0.5em 1em 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #c71717;
+            color: #ffffff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0400ff;
+            transform: translateY(-3px);
+        }
+        <style>
+        /* Your existing styles */
+
+        /* New styles for audio player */
+        .audio-player {
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        .audio-player button {
+            padding: 0.7em 1.5em;
+            border: none;
+            border-radius: 4px;
+            background-color: #c71717;
+            color: #ffffff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .audio-player button:hover {
+            background-color: #a944c0;
+            transform: translateY(-3px);
+        }
+        .music-player {
+    position: fixed; /* Keeps the player fixed in position */
+    bottom: 20px;    /* Distance from the bottom edge of the viewport */
+    right: 20px;     /* Distance from the right edge of the viewport */
+    background: #f4f4f9;
+    border: 2px solid #c71717;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;   /* Ensures it stays above other content */
+}
+
+.music-player audio {
+    width: 200px;    /* Adjust the width as needed */
+    outline: none;   /* Removes the default outline */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <img src="b1.jpg" alt="Thai-Austrian Technical College">
+        </div>
+        <div class="header-small">
+            <div class="marquee">
+                <span>Thai-Austrian Technical College วิทยาลัยเทคนิคสัตหีบ</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">ประวัติความเป็นมา</a></li>
+                <li><a href="s1.html">อัตลักษณ์</a></li>
+                <li><a href="s2.html">ปรัชญา</a></li>
+                <li><a href="s3.html">นโยบาย</a></li>
+                <li><a href="s4.html">ทำเนียบ</a></li>
+                <li><a href="s5.html">ผู้จัดทำ</a></li>
+                <li><a href="s6.html">ฟอร์ม</a></li>
+                <li><a href="s7.html">ใบความรู้</a></li>
+            </ul>
+        </nav>
+        <article>
+            <p style="font-size: 20px; 
+            font-weight: bold; 
+            color: #3498db; 
+            text-shadow: 2px 2px 4px rgba(255, 0, 106, 0.363); 
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ffa0a0, #ffb1e1); 
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';">
+            แบบฟอร์มสมัครสมาชิก
+            </p>
+            <hr style="border: none; border-top: 1px solid #ff0000; width: auto; margin: 8px 0;">
+            <h3>กรอกชื่อ-สกุล</h3>
+            <input name="name" type="text" maxlength="50">
+            <h3>กรอกวัน/เดือน/ปีเกิด</h3>
+            <select name="Day">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="Month">
+                <option value="">มกราคม</option>
+                <option value="">กุมภาพันธ์</option>
+                <option value="">มีนาคม</option>
+                <option value="">เมษายน</option>
+                <option value="">พฤษภาคม</option>
+                <option value="">มิถุนายน</option>
+                <option value="">กรกฎาคม</option>
+                <option value="">สิงหาคม</option>
+                <option value="">กันยายน</option>
+                <option value="">ตุลาคม</option>
+                <option value="">พฤศจิกายน</option>
+                <option value="">ธันวาคม</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="year">
+                <option value="">--เลือกปี--</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+            </select>
+            <h3>ระบุเพศ</h3>
+            <p><input type="radio" name="gender" value="ชาย">ชาย</p>
+            <p><input type="radio" name="gender" value="หญิง">หญิง</p>
+            <h3>สถานะ</h3>
+            <select name="Status">
+                <option value="">โสด</option>
+                <option value="">สมรส</option>
+                <option value="">หย่าร้าง</option>
+                <option value="">แยกกันอยู่</option>
+            </select>
+            <h3>ศาสนา</h3>
+            <p><input type="radio" name="religion" value="พุทธ">พุทธ</p>
+            <p><input type="radio" name="religion" value="คริสต์">คริสต์</p>
+            <p><input type="radio" name="religion" value="อิสลาม">อิสลาม</p>
+            <p><input type="radio" name="religion" value="พราห์ม-ฮินดู">พราห์ม-ฮินดู</p>
+            <p><input type="radio" name="religion" value="ซิกซ์">ซิกซ์</p>
+            <p><input type="radio" name="religion" value="ยิว">ยิว</p>
+            <p><input type="radio" name="religion" value="ไม่มีศาสนา">ไม่มีศาสนา</p>
+            <h3>ที่อยู่</h3>
+            <textarea name="address" rows="6"></textarea>
+            <h3>เบอร์ติดต่อ</h3>
+            <input name="phone" type="text" maxlength="10">
+            <h3>Email</h3>
+            <input name="email" type="text" maxlength="30">
+            <h3>Password</h3>
+            <input name="password" type="password" maxlength="8">
+            <h3>กรุณาอัปโหลดไฟล์รูปภาพของคุณ</h3>
+            <input type="file" name="img">
+            <br><br><br>
+            <input type="submit" name="submit" value="ตกลง">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="reset" value="ยกเลิก">
+            <div class="audio-player">
+                <audio id="audioPlayer" src="path_to_your_audio_file.mp3"></audio>
+                <button onclick="toggleAudio()">เล่น/หยุด</button>
+            </div>
+        </article>
+    </div>
+
+ 
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('audioPlayer');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+    <footer>
+    </footer>
+</body>
+</html>

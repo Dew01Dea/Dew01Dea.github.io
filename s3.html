@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            align-items: center;
+        }
+    
+        header {
+            width: 100%;
+            max-width: 2000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c71717;
+            color: #ffffff;
+        }
+    
+        .header-main img {
+            width: 100%;
+            height: auto;
+            max-width: 2000px;
+        }
+    
+        .header-small {
+            padding: 0.5em;
+            background-color: #c71717;
+            text-align: center;
+            font-size: 1em;
+            font-weight: normal;
+            width: 100%;
+        }
+    
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+    
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+    
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        div.container {
+            width: 100%;
+            max-width: 2000px;
+            display: flex;
+            flex: 1;
+            background-color: #ffffff;
+        }
+    
+        nav {
+            flex: 0 0 200px;
+            padding: 1em;
+            background-color : #ffe7e7;
+            border-right : 1px solid #c71717;
+            height : calc(100vh - auto); /* Adjusted for header and footer height */
+            overflow-y:  auto;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        nav ul li {
+            margin: 1em 0;
+        }
+    
+        nav ul a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            display: block;
+            padding: 0.5em;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        nav ul li a:hover {
+            background-color: #ffffff;
+            color: #c71717;
+            transform: translateX(5px);
+        }
+    
+        article {
+            flex: 1;
+            padding: 2em;
+            background-color: #ffffff;
+            overflow-y: auto;
+        }
+    
+        footer {
+            width: 100%;
+            max-width: 2000px;
+            padding: 1em;
+            color: #ffffff;
+            background-color: #c71717;
+            text-align: center;
+            font-size: 1em;
+            margin: 0 auto;
+        }
+        .right-nav ul1 li1 a {
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        .right-nav ul1 li1 a:hover {
+            background-color: #a944c0; /* เปลี่ยนสีพื้นหลัง */
+            transform: translateY(-5px); /* ขยับข้อความขึ้นเล็กน้อย */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้กับข้อความ */
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-main">
+                <img src="b1.jpg" alt="Thai-Austrian Technical College">
+            </div>
+            <div class="header-small">
+                <div class="marquee">
+                    <span>Thai-Austrian Technical College วิทยาลัยเทคนิคสัตหีบ</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <br>
+
+                    <li><a href="index.html">ประวัติความเป็นมา</a></li>
+                    <li><a href="s1.html">อัตลักษณ์</a></li>
+                    <li><a href="s2.html">ปรัชญา</a></li>
+                    <li><a href="s3.html">นโยบาย</a></li>
+                    <li><a href="s4.html">ทำเนียบ</a></li>
+                    <li><a href="s5.html">ผู้จัดทำ</a></li>
+                    <li><a href="s6.html">ฟอร์ม</a></li>
+                    <li><a href="s7.html">ใบความรู้</a></li>
+                </ul>
+            </nav>
+        <article>
+
+        
+                <p style="font-size: 20px; 
+               font-weight: bold; 
+               color: #3498db; 
+               text-shadow: 2px 2px 4px rgba(255, 0, 106, 0.363); 
+               font-family: 'Arial', sans-serif;
+               background: linear-gradient(45deg, #ffa0a0, #ffb1e1); 
+               -webkit-background-clip: text;
+               color: transparent;
+               transition: transform 0.3s ease-in-out;
+               display: inline-block;"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';">
+        นโยบายของวิทยาลัย
+    </p>
+    <hr style="border: none; border-top: 1px solid #ff0000; width: auto; margin: 0px 0;">
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspเพื่อให้การดำเนินงานของวิทยาลัยเทคนิคสัตหีบ สอดคล้องกับนโยบายกรมอาชีวศึกษา และในการดำเนินงานของกองวิทยาลัยเทคนิค
+        <br>&nbsp&nbspวิทยาลัยเทคนิคสัตหีบจึงขอสรุปสาระสำคัญของนโยบาย และแนวทางดำเนินงานดังกล่าว เพื่อใช้เป็นทิศทางในการปฎิบัติงานให้เกิดผลดี ในทางปฏิบัติอย่างจริงจัง</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. การสอนของครู-อาจารย์ ทั้งวิชาสามัญ ทฤษฎี และภาคปฏิบัติ ให้เน้นเรื่องการเข้าสอนตรงเวลา การสอนเต็มเวลา ตรงตามตารางสอน</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. การจัดทำสื่อการเรียนการสอนรายวิชาต่างๆ ในรูปแบบของ แผ่นใส สไลด์ วีดีทัศน์ บทเรียนคอมพิวเตอร์ และชุดฝีก เป็นต้น</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. การเขียนแผนการสอน หรือโครงการสอน ของทุกรายวิชาในทุกๆ ภาคเรียน</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4. ครูอาจารย์ประเมินผลตรงตามหลักสูตรและส่งผลการเรียนตรงตามเวลาที่กำหนด</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5. ปรับปรุง และพัฒนาห้องเรียนและห้องปฏิบัติการวิทยาศาสตร์ให้เพียงพอและทันสมัย</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp6. ปรับปรุง และพัฒนาห้องปฏิบัติการทางภาษา</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp7. ปรับปรุงและพัฒนาห้องปฏิบัติการคอมพิวเตอร์</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8. ส่งเสริมประดิษฐ์ สิ่งประดิษฐ์ของคนรุ่นใหม่ โดยมุ่งเน้น คุณภาพ ปริมาณ และการมีส่วนร่วมของนักศึกษา</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9. ส่งเสริมและสนับสนุนการทำโครงงานวิทยาศาสตร์</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10. การแต่งกาย การตรงต่อเวลา ความรับผิดชอบ และความสามัคคีของนักเรียน นักศึกษา</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp11. จัด และตกแต่งวิทยาลัยให้ สะอาด สวยงาม ร่มรื่น</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp12. จัดที่นั่ง และบริเวณที่พักผ่อน สำหรับนักศึกษา</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp13. ความสะอาดความเป็นระเบียบของห้องเรียน อาคาร โรงฝึกงาน ห้องปฏิบัติการ โรงอาหาร</p> 
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp14. ปรับปรุงห้องน้ำครู-อาจารย์ และห้องน้ำนักศึกษา เน้นความพร้อมและสะอาด</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp15. ปรับปรุงและพัฒนาห้องเครื่องมือ(Tool Room)ของทุกโรงงาน ทุกสาขาวิชาชีพให้ได้มาตรฐานเหมาะสม มีเครื่องมือเบื้องต้นครบ</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp16. จัดให้มีรับงานการค้า เพื่อหารายได้สนับสนุน การพัฒนาวิทยาลัยอย่างมีระบบ และยึดระเบียบ</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp17. จัดการเรียนการสอนระบบทวิภาคีในแผนกวิชาที่มีความพร้อม สามารถรับนักศึกษาได้</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp18. จัดการเรียนการสอนสนับสนุนสำหรับคนพิการ และคนด้อยโอกาสทางสังคม</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp19. ปรับปรุง และพัฒนางาน ทะเบียน งานวัดผลประเมินผล ศูนย์ข้อมูลโดยใช้ระบบคอมพิวเตอร์ร่วมกันอย่างเป็นระบบ</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp20. จัดปรับปรุงห้องสมุดให้มีครุภัณฑ์เพียงพอกับจำนวนนักศึกษาและเป็นห้องสมุดเทคโนโลยี</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp21. จัดกิจกรรมของนักศึกษาอย่างเป็นระบบ สามารถตรวจสอบได้</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp22. เพิ่มโอกาสทางการศึกษา และเรียนรู้อย่างทั่วถึง</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp23. มีการพัฒนา 4 ใหม่ คือ คนไทยยุคใหม่ ครูยุคใหม่ แหล่งเรียนรู้ใหม่ ระบบการบริการจัดการใหม่</p>
+           <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp24. พัฒนาระบบคุณวุฒิวิชาชีพเชื่อมโยงระหว่างภาครัฐและเอกชนเพื่อยกระดับคุณภาพสู่สากล</p>
+
+        </article>
+    </div>
+
+    <footer></footer>
+</body>
+</html>

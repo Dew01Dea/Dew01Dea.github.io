@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player with Effects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            height: 2000px; /* Just to demonstrate scrolling */
+            padding: 20px;
+        }
+
+        .music-player {
+            position: fixed;
+            bottom: -100px; /* Start position off-screen */
+            right: 20px;
+            background: #f4f4f9;
+            border: 2px solid #c71717;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, bottom 0.5s ease;
+        }
+
+        .music-player.show {
+            bottom: 20px; /* Slide into view */
+        }
+
+        .music-player:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.7); /* Pinkish glow */
+            transform: rotate(0deg);
+            animation: bounce 0.6s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Scroll Down to See the Music Player</h1>
+        <p>...</p> <!-- Content here -->
+    </div>
+
+    <div class="music-player">
+        <audio id="audio" controls>
+            <source src="3719.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.music-player').classList.add('show');
+        });
+    </script>
+</body>
+</html>

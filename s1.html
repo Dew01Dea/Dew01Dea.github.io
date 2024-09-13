@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            align-items: center;
+        }
+    
+        header {
+            width: 100%;
+            max-width: 2000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c71717;
+            color: #ffffff;
+        }
+    
+        .header-main img {
+            width: 100%;
+            height: auto;
+            max-width: 2000px;
+        }
+    
+        .header-small {
+            padding: 0.5em;
+            background-color: #c71717;
+            text-align: center;
+            font-size: 1em;
+            font-weight: normal;
+            width: 100%;
+        }
+    
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+    
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+    
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        div.container {
+            width: 100%;
+            max-width: 2000px;
+            display: flex;
+            flex: 1;
+            background-color: #ffffff;
+        }
+    
+        nav {
+            flex: 0 0 200px;
+            padding: 1em;
+            background-color : #ffe7e7;
+            border-right : 1px solid #c71717;
+            height : calc(100vh - auto); /* Adjusted for header and footer height */
+            overflow-y:  auto;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        nav ul li {
+            margin: 1em 0;
+        }
+    
+        nav ul a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            display: block;
+            padding: 0.5em;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        nav ul li a:hover {
+            background-color: #ffffff;
+            color: #c71717;
+            transform: translateX(5px);
+        }
+    
+        article {
+            flex: 1;
+            padding: 2em;
+            background-color: #ffffff;
+            overflow-y: auto;
+        }
+    
+        footer {
+            width: 100%;
+            max-width: 2000px;
+            padding: 1em;
+            color: #ffffff;
+            background-color: #c71717;
+            text-align: center;
+            font-size: 1em;
+            margin: 0 auto;
+        }
+        .right-nav ul1 li1 a {
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        .right-nav ul1 li1 a:hover {
+            background-color: #a944c0; /* เปลี่ยนสีพื้นหลัง */
+            transform: translateY(-5px); /* ขยับข้อความขึ้นเล็กน้อย */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้กับข้อความ */
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-main">
+                <img src="b1.jpg" alt="Thai-Austrian Technical College">
+            </div>
+            <div class="header-small">
+                <div class="marquee">
+                    <span>Thai-Austrian Technical College วิทยาลัยเทคนิคสัตหีบ</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <br>
+ 
+                    <li><a href="index.html">ประวัติความเป็นมา</a></li>
+                    <li><a href="s1.html">อัตลักษณ์</a></li>
+                    <li><a href="s2.html">ปรัชญา</a></li>
+                    <li><a href="s3.html">นโยบาย</a></li>
+                    <li><a href="s4.html">ทำเนียบ</a></li>
+                    <li><a href="s5.html">ผู้จัดทำ</a></li>
+                    <li><a href="s6.html">ฟอร์ม</a></li>
+                    <li><a href="s7.html">ใบความรู้</a></li>
+                </ul>
+            </nav>
+        <article>
+
+        
+                <p style="font-size: 20px; 
+               font-weight: bold; 
+               color: #3498db; 
+               text-shadow: 2px 2px 4px rgba(255, 0, 106, 0.363); 
+               font-family: 'Arial', sans-serif;
+               background: linear-gradient(45deg, #ffa0a0, #ffb1e1); 
+               -webkit-background-clip: text;
+               color: transparent;
+               transition: transform 0.3s ease-in-out;
+               display: inline-block;"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';">
+        อัตลักษณ์และเอกลักษณ์
+    </p>
+    <hr style="border: none; border-top: 1px solid #ff0000; width: auto; margin: 0px 0;">
+    <br>
+    <p style="font-size: 20px; 
+               font-weight: bold; 
+               color: #3498db; 
+               text-shadow: 2px 2px 4px rgba(255, 0, 106, 0.363); 
+               font-family: 'Arial', sans-serif;
+               background: linear-gradient(45deg, #ffa0a0, #ffb1e1); 
+               -webkit-background-clip: text;
+               color: transparent;
+               transition: transform 0.3s ease-in-out;
+               display: inline-block;"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';">
+        &nbsp&nbspอัตลักษณ์
+    </p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ทักษะเยี่ยม เปี่ยมคุณธรรม</p>
+    <br>
+    <p style="font-size: 20px; 
+               font-weight: bold; 
+               color: #3498db; 
+               text-shadow: 2px 2px 4px rgba(255, 0, 106, 0.363); 
+               font-family: 'Arial', sans-serif;
+               background: linear-gradient(45deg, #ffa0a0, #ffb1e1); 
+               -webkit-background-clip: text;
+               color: transparent;
+               transition: transform 0.3s ease-in-out;
+               display: inline-block;"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';">
+        &nbsp&nbspเอกลักษณ์
+    </p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp มุ่งผลิตกำลังคน ที่มีสมรรถนะ และคุณภาพสู่สากล </p>
+        </article>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
